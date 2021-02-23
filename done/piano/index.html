@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>My Little Piano</title>
+</head>
+<body>
+    <div class="piano">
+        <div class="piano__body">
+            <div class="piano__speaker"></div>
+            <div class="piano__interface">
+                <div class="piano__controls">
+                    <h4 class="piano__heading">Piano</h4>
+                    <label><input type="radio" class="piano__control__option" name="control" value="letterNotes" checked>Letter Notes</label>
+                    <label><input type="radio" class="piano__control__option" name="control" value="keyboard">Keyboard</label>
+                    <label><input type="radio" class="piano__control__option" name="control" value="none">None</label>
+
+                </div>
+                <div class="piano__autoplay">
+                    <h4 class="piano_heading">Autoplay</h4>
+                    <select class="piano__song-list">
+                        <option value="1">Jingle Bells</option>
+                        <option value="2">Happy Birthday</option>
+                        <option value="3">Alle meine Entchen</option>
+                        <option value="4">Hänschen Klein</option>
+                        <option value="5">Bruder Jakob</option>
+                    </select>
+                    <label for="tempo">Tempo:
+                        <select id="tempo" class="piano__tempo">
+                            <option value="1">Slow</option>
+                            <option value="2" selected>Normal</option>
+                            <option value="3">Fast</option>
+                        </select>
+                    </label>
+                    <button class="piano__play-btn">Play</button>
+                </div>
+            </div>
+            <div class="piano__speaker"></div>
+        </div>
+        <div class="piano__keyboard">
+            <!-- Inhalt (Tasten) wird automatisch via JS generiert. -->
+            <!-- 
+            <button class="piano__key piano__key--white">C1</button>
+            <div class="empty-space">
+                <button class="piano__key piano__key--black">C#1</button>
+            </div>            
+            <button class="piano__key piano__key--white">D1</button>
+            <div class="empty-space">
+                <button class="piano__key piano__key--black">D#1</button>
+            </div>
+            <button class="piano__key piano__key--white">E1</button>
+            <button class="piano__key piano__key--white">F1</button> 
+            -->
+        </div>
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
